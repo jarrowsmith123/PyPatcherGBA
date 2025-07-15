@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypatchergba"
+version = "0.1.0"
+authors = [
+  { name="James Arrowsmith", email="jmsarrowsmith05@gmail.com" },
+]
+description = "A simple Python library to apply IPS, UPS, and BPS ROM patches."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Games/Entertainment",
+]
+
+[project.urls]
+Homepage = "https://github.com/jarrowsmith123/PyPatcherGBA"
+Issues = "https://github.com/jarrowsmith123/PyPatcherGBA/issues"
+
+[project.scripts]
+pypatchergba = "pypatchergba.cli:main"

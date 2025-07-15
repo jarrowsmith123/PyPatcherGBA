@@ -1,8 +1,4 @@
-import sys
-import os
 import io
-import traceback
-import argparse
 from typing import Union
 
 def read_vli(stream: io.BytesIO) -> int:
