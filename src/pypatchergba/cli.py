@@ -18,10 +18,12 @@ def main():
     else:
         OUTPUT_DIR = "output"
         os.makedirs(OUTPUT_DIR, exist_ok=True)
-        patch_filename = os.path.basename(args.patch_path)
-        name, ext = os.path.splitext(patch_filename)
-        output_filename = f"{name}_patched{ext}"
+        # Output ROM name will default to hack name + rom extension
+        patch_name = os.path.splitext(os.path.basename(args.patch_path))[0]
+        rom_ext = os.path.splitext(args.rom_path)[1]
+        output_filename = f"{patch_name}{rom_ext}"
         output_path = os.path.join(OUTPUT_DIR, output_filename)
+
 
     print(f"ROM: {args.rom_path}")
     print(f"Patch: {args.patch_path}")
