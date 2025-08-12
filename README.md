@@ -1,6 +1,8 @@
 # PyPatcherGBA
 
-A simple command-line tool and Python library to apply IPS, UPS, and BPS ROM patches.
+A simple command-line tool and Python library to apply IPS, UPS, and BPS ROM patches, primarily for use with .gba ROMs.
+
+
 
 ## Installation
 
@@ -32,5 +34,16 @@ with open("new_rom.gba", "wb") as f:
 
 print("Patching complete!")
 ```
+
+## Sources
+
+Documentation for the available file formats can be found here:
+
+BPS: https://www.romhacking.net/documents/746/
+
+UPS: https://www.romhacking.net/documents/392/
+
+IPS: https://sneslab.net/wiki/IPS_file_format
+
 ## License
 This project is licensed under the Apache License 2.0. See the LICENSE file for details.
