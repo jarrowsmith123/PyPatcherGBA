@@ -2,6 +2,9 @@ import io
 from typing import Union
 import zlib
 
+# This patcher patches IPS, BPS and UPS patches, primarily for game ROMs and binaries.
+# For usage and patch specification, see the readme
+
 def read_vli(stream: io.BytesIO) -> int:
 
     # Takes a stream of vli encoded bits and returns integer value
